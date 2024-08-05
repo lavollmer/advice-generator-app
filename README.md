@@ -53,8 +53,8 @@ Advice Generator API Data Object:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution]()
 - Live Site URL: [Advice Generator App Laura Dev](https://chic-malabi-36e673.netlify.app/)
+- Solution URL: [Laura Dev Frontend Mentor Solution](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-responsive-mobile-and-web-advice-generator-QU2F5o3b_K)
 
 ### My Process
 
