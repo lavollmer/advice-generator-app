@@ -27,3 +27,7 @@ html, body, #root {
   white-space: wrap;
   max-width: 100%;
 }
+
+.neon-button:hover {
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+}

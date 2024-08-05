@@ -59,7 +59,7 @@ function App() {
             </div>
             <div className="absolute bottom-[-20px]">
               <button
-                className="bg-neon-green p-3 rounded-full"
+                className="bg-neon-green p-3 rounded-full neon-button"
                 onClick={fetchAdvice}
               >
                 <img src={iconDice} alt="icon dice" />
