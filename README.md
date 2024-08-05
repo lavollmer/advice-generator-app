@@ -65,6 +65,17 @@ I re-learned a lot of new information and refreshed myself on different topics.
 2. Try Catch Block - Handles exceptions and errors that may occur during the excecution of a block of code. Try block contains the code that might throw an error. The catch block contains the code if an error occurs in the try block. The code inside the try block is executed line by line. If no errors occur - the catch block is skipped. If an error occurs in the remaining code in the try block then the control is transferred to the catch block.
 3. JSON parse - JSON parsing is the process of converting the JSON (JavaSCript Object Notation) string into a JavaScript object. JSON is a data interchange format that is easy for humans to read and write. JavaScript objects allow you to easily access and manipulate the data.
 4. JavaScript Object Fundamentals - An object is a collection of key-value pairs where each key is associated with a value. The values can be any data type. 
+5. useEffect hook - This hook provided by REact allows the end  user to perform side effects inf unction components. Side effects can include data fetching, manually changing the DOM. In this code, you want to fetch the advice data as soon as the component mounts. With useEffect, I ensure the data fetching happens right after the component is rendered. The empty dependency ([]) ensures the effect only runs once.
+6. useEffect Dependencies - The useEffect hook can take depdencies to control when the effect runs. Some common dependencies include state variables, props, context values, derived values, empty arrays and no dependencies. If you have no dependencies then the effect will run after every render.
+7. if (loading) - The loading state is initialized to true when the component mounts. An asynchronous function fetches the data - during this the loading remains true. The component checks the loading state to determine what to render.
+8. Asynchronous function - A function that operates asynchronously via the event loop allowing the program to execute the other code while waiting for the operation to complete. Async functions are used for operations that take time to complete.
+9. API Data - To determine which properties are available from the API repsonse, you can refer to the API documentation. An example of the API Slip API:
+{
+  "slip": {
+    "id": 45,
+    "advice": "Your advice text here."
+  }
+}
 
 
 ### Continued development

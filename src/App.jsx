@@ -36,8 +36,11 @@ function App() {
     }
   };
 
+  //useEffect hook to fetch advice when the component mounts
   useEffect(() => {
+    // call the fetchAdvice function when the component mounts
     fetchAdvice();
+    // empty array as the second argument to ensure that the effect only runs once when the component mounts
   }, []);
 
   // if condition to check if the data is loading, if there is an error, or if the data is fetched
@@ -45,15 +48,18 @@ function App() {
     return <div>Loading...</div>;
   }
 
+  // if condition to check if there is an error
   if (error) {
     return <div>Error: {error.message}</div>;
   }
 
   return (
+    // React Fragment to wrap the JSX code
     <>
       <div className="flex flex-col items-center justify-center bg-dark-blue font-manrope">
         <div className="flex flex-col items-center justify-center mt-10">
           <div className="relative flex flex-col items-center justify-center space-y-4 static-size text-center bg-dark-grayish-blue rounded-lg m-20">
+            {/* data.id are properties of the data object - object contains information fetches from an external source */}
             <h1 className="text-neon-green pb-4 text-sm letter-spaced">ADVICE #{data.id}</h1>
             <div className="flex flex-col items-center justify-center">
               <pre className="text-white font-manrope font-extrabold advice-text mb-8 p-2">
@@ -63,6 +69,7 @@ function App() {
             <div>
               <img src={dividerDesktop} alt="divider mobile" />
             </div>
+            {/* positions the button absolutely at the bottom with an effset of -20 pixels */}
             <div className="absolute bottom-[-20px]">
               <button
                 className="bg-neon-green p-3 rounded-full neon-button"
