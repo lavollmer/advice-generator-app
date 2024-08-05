@@ -48,7 +48,7 @@ function App() {
               </pre>
             </div>
             <div>
-              <img src={dividerMobile} alt="divider mobile" />
+              <img src={dividerDesktop} alt="divider mobile" />
             </div>
             <div className="absolute bottom-[-20px]">
               <button
