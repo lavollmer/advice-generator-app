@@ -10,3 +10,8 @@ html, body, #root {
     height:100%;
     width:100%;
 }
+
+.static-size {
+  width: 400px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+}

@@ -41,8 +41,8 @@ function App() {
     <>
       <div className="flex flex-col items-center justify-center bg-dark-blue font-manrope">
         <div className="flex flex-col items-center justify-center mt-20">
-          <div className="flex flex-col items-center justify-center text-center bg-dark-grayish-blue rounded-lg m-20">
-            <h1 className="text-neon-green">Advice #{data.id}</h1>
+          <div className="flex flex-col items-center justify-center static-size text-center bg-dark-grayish-blue rounded-lg m-20">
+            <h1 className="text-neon-green pt-10 pb-4">ADVICE #{data.id}</h1>
             <div className="flex flex-col items-center justify-center">
               <pre className="text-white text-xl font-manrope">
                 <h1>"{data.advice}"</h1>
