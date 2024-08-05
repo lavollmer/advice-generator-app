@@ -59,6 +59,10 @@ Next, I reviewed the design layout to determine which sections would be componen
 
 ### What I learned
 
+I re-learned a lot of new information and refreshed myself on different topics.
+
+1. APIS in website development - An API, or application programming interface, enables different software applications to share information and interact with each other. An API is a set of instructions tha tallows software developers to access features and functions - two pieces of software to communicate to each other. The application sending the request is the client and the application sending the response is the server.
+
 
 ### Continued development
 
