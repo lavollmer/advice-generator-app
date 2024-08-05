@@ -33,13 +33,13 @@ Users should be able to:
 
 Desktop Version:
 
-![Desktop Landing Page](./src/assets/DesktopLandingPage.png)
+![Desktop Landing Page]()
 
 
 ### Links
 
 - Solution URL: [Frontend Mentor Solution]()
-- Live Site URL: [Easybank Landing Page Laura Dev]()
+- Live Site URL: [Easybank Landing Page Laura Dev](https://chic-malabi-36e673.netlify.app/)
 
 ### My Process
 
@@ -59,24 +59,32 @@ Next, I reviewed the design layout to determine which sections would be componen
 
 ### What I learned
 
-I re-learned a lot of new information and refreshed myself on different topics.
+I refreshed my knowledge and learned new information on various topics:
 
-1. APIS in website development - An API, or application programming interface, enables different software applications to share information and interact with each other. An API is a set of instructions tha tallows software developers to access features and functions - two pieces of software to communicate to each other. The application sending the request is the client and the application sending the response is the server.
-2. Try Catch Block - Handles exceptions and errors that may occur during the excecution of a block of code. Try block contains the code that might throw an error. The catch block contains the code if an error occurs in the try block. The code inside the try block is executed line by line. If no errors occur - the catch block is skipped. If an error occurs in the remaining code in the try block then the control is transferred to the catch block.
-3. JSON parse - JSON parsing is the process of converting the JSON (JavaSCript Object Notation) string into a JavaScript object. JSON is a data interchange format that is easy for humans to read and write. JavaScript objects allow you to easily access and manipulate the data.
-4. JavaScript Object Fundamentals - An object is a collection of key-value pairs where each key is associated with a value. The values can be any data type. 
-5. useEffect hook - This hook provided by REact allows the end  user to perform side effects inf unction components. Side effects can include data fetching, manually changing the DOM. In this code, you want to fetch the advice data as soon as the component mounts. With useEffect, I ensure the data fetching happens right after the component is rendered. The empty dependency ([]) ensures the effect only runs once.
-6. useEffect Dependencies - The useEffect hook can take depdencies to control when the effect runs. Some common dependencies include state variables, props, context values, derived values, empty arrays and no dependencies. If you have no dependencies then the effect will run after every render.
-7. if (loading) - The loading state is initialized to true when the component mounts. An asynchronous function fetches the data - during this the loading remains true. The component checks the loading state to determine what to render.
-8. Asynchronous function - A function that operates asynchronously via the event loop allowing the program to execute the other code while waiting for the operation to complete. Async functions are used for operations that take time to complete.
-9. API Data - To determine which properties are available from the API repsonse, you can refer to the API documentation. An example of the API Slip API:
-{
-  "slip": {
-    "id": 45,
-    "advice": "Your advice text here."
-  }
-}
+1. **APIs in Website Development** - An API (Application Programming Interface) enables different software applications to share information and interact with each other. It provides a set of instructions that allow software developers to access features and functions, facilitating communication between two pieces of software. The application sending the request is the client, and the application sending the response is the server.
 
+2. **Try-Catch Block** - This construct handles exceptions and errors that may occur during the execution of a block of code. The `try` block contains the code that might throw an error, while the `catch` block contains the code to handle the error if it occurs. The code inside the `try` block is executed line by line. If no errors occur, the `catch` block is skipped. If an error occurs, control is transferred to the `catch` block.
+
+3. **JSON Parsing** - JSON (JavaScript Object Notation) parsing is the process of converting a JSON string into a JavaScript object. JSON is a data interchange format that is easy for humans to read and write. JavaScript objects allow you to easily access and manipulate the data.
+
+4. **JavaScript Object Fundamentals** - An object is a collection of key-value pairs where each key is associated with a value. The values can be of any data type.
+
+5. **useEffect Hook** - This hook provided by React allows you to perform side effects in function components. Side effects can include data fetching and manually changing the DOM. In this code, you want to fetch the advice data as soon as the component mounts. With `useEffect`, you ensure the data fetching happens right after the component is rendered. The empty dependency array (`[]`) ensures the effect only runs once.
+
+6. **useEffect Dependencies** - The `useEffect` hook can take dependencies to control when the effect runs. Common dependencies include state variables, props, context values, derived values, empty arrays, and no dependencies. If you have no dependencies, the effect will run after every render.
+
+7. **Loading State** - The loading state is initialized to `true` when the component mounts. An asynchronous function fetches the data, and during this time, the loading state remains `true`. The component checks the loading state to determine what to render.
+
+8. **Asynchronous Function** - An asynchronous function operates asynchronously via the event loop, allowing the program to execute other code while waiting for the operation to complete. Async functions are used for operations that take time to complete.
+
+9. **API Data** - To determine which properties are available from the API response, you can refer to the API documentation. An example of the Advice Slip API response:
+   ```json
+   {
+     "slip": {
+       "id": 45,
+       "advice": "Your advice text here."
+     }
+   }
 
 ### Continued development
 
