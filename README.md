@@ -62,6 +62,9 @@ Next, I reviewed the design layout to determine which sections would be componen
 I re-learned a lot of new information and refreshed myself on different topics.
 
 1. APIS in website development - An API, or application programming interface, enables different software applications to share information and interact with each other. An API is a set of instructions tha tallows software developers to access features and functions - two pieces of software to communicate to each other. The application sending the request is the client and the application sending the response is the server.
+2. Try Catch Block - Handles exceptions and errors that may occur during the excecution of a block of code. Try block contains the code that might throw an error. The catch block contains the code if an error occurs in the try block. The code inside the try block is executed line by line. If no errors occur - the catch block is skipped. If an error occurs in the remaining code in the try block then the control is transferred to the catch block.
+3. JSON parse - JSON parsing is the process of converting the JSON (JavaSCript Object Notation) string into a JavaScript object. JSON is a data interchange format that is easy for humans to read and write. JavaScript objects allow you to easily access and manipulate the data.
+4. JavaScript Object Fundamentals - An object is a collection of key-value pairs where each key is associated with a value. The values can be any data type. 
 
 
 ### Continued development
