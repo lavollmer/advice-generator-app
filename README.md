@@ -1,6 +1,6 @@
 # Advice Generator App
 
-This project entailed creating the Advice Generator App with both mobile and web responsive designs. Key features include 
+This project entailed creating the Advice Generator App with both mobile and web responsive designs. It was React-based advice generator app that fetches and displays random advice using the Advice Slip API. The app handles loading states, errors, and data fetching with useEffect and asynchronous functions, providing a seamless user experience.
 
 
 ## Table of contents
@@ -18,7 +18,7 @@ This project entailed creating the Advice Generator App with both mobile and web
 
 ## Overview
 
-This project involved replicating a design layout given for desktop and mobile for a Bookmark Landing Page with special features.
+This project involved replicating a design layout given for desktop and mobile for a Advice Generator App with special features.
 
 ### The challenge
 
@@ -28,18 +28,33 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-
 ### Screenshots
 
 Desktop Version:
 
-![Desktop Landing Page]()
+![Desktop Landing Page](./src/assets/DesktopAdviceScreenshot.png)
+
+Mobile Version:
+
+![Mobile Landing Page](./src/assets/MobileAdviceScreenshot.png)
+
+Lighthouse Report:
+
+![Lighthouse Report](./src/assets/LighthouseReport.png)
+
+Advice Generator API:
+
+![Advice API Website](./src/assets/RandomAdviceAPIScreenshot.png)
+
+Advice Generator API Data Object:
+
+![Advice API Data Object](./src/assets/AdviceAPIDataObjectScreenshot.png)
 
 
 ### Links
 
 - Solution URL: [Frontend Mentor Solution]()
-- Live Site URL: [Easybank Landing Page Laura Dev](https://chic-malabi-36e673.netlify.app/)
+- Live Site URL: [Advice Generator App Laura Dev](https://chic-malabi-36e673.netlify.app/)
 
 ### My Process
 
@@ -88,12 +103,12 @@ I refreshed my knowledge and learned new information on various topics:
 
 ### Continued development
 
-I will continue to learn more about TailwindCSS, ReactJS and updating my process of building a website.
+I will continue to learn more about TailwindCSS, ReactJS and streamline my process of building a website. I want to learn more about fetching data from API sites and understanding asynchronous functions. 
 
 ### Useful resources
 
-- [Manrope Google Font](https://fonts.google.com/specimen/Manrope) - Design called for this font in the project.
-- [Advice Slip API](https://api.adviceslip.com/) - API for design
+- [Manrope Google Font](https://fonts.google.com/specimen/Manrope) - This Google Font was specified by style guide for the project
+- [Advice Slip API](https://api.adviceslip.com/) - This API was specified for the project
 
 ## Author
 
