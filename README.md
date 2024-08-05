@@ -67,6 +67,7 @@ I will continue to learn more about TailwindCSS, ReactJS and updating my process
 ### Useful resources
 
 - [Manrope Google Font](https://fonts.google.com/specimen/Manrope) - Design called for this font in the project.
+- [Advice Slip API](https://api.adviceslip.com/) - API for design
 
 ## Author
 
