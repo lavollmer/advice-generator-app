@@ -11,7 +11,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  const fetchAdvice = () => {
+    setLoading(true);
+    setError(null);
     fetch("https://api.adviceslip.com/advice")
       .then((response) => {
         if (!response.ok) {
@@ -27,6 +29,10 @@ function App() {
         setError(error);
         setLoading(false);
       });
+  };
+
+  useEffect(() => {
+    fetchAdvice();
   }, []);
 
   if (loading) {
@@ -52,7 +58,7 @@ function App() {
               <img src={dividerMobile} alt="divider mobile" />
             </div>
             <div>
-              <button className="bg-neon-green">
+              <button className="bg-neon-green" onClick={fetchAdvice}>
                 <img src={iconDice} alt="icon dice" />
               </button>
             </div>
