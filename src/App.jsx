@@ -8,7 +8,6 @@ import iconDice from "../src/assets/icon-dice.svg";
 import dividerDesktop from "../src/assets/pattern-divider-desktop.svg";
 
 function App() {
-  //useState to manage the state of the data, loading, and error
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

@@ -82,7 +82,7 @@ Afterwards, I reviewed all my code, added comments, and updated my README with m
 
 ### What I learned
 
-I refreshed my knowledge and learned new information on various topics:
+I refreshed my knowledge and learned new information on various topics. These topics are written from the perspective of being informative and less personal for my knowledge:
 
 1. **APIs in Website Development** - An API (Application Programming Interface) enables different software applications to share information and interact with each other. It provides a set of instructions that allow software developers to access features and functions, facilitating communication between two pieces of software. The application sending the request is the client, and the application sending the response is the server.
 
