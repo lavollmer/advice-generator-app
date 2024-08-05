@@ -11,24 +11,17 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const fetchAdvice = () => {
+  const fetchAdvice = async () => {
     setLoading(true);
-    setError(null);
-    fetch("https://api.adviceslip.com/advice")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.slip); // Extract the slip object
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error);
-        setLoading(false);
-      });
+    try {
+      const response = await fetch("https://api.adviceslip.com/advice");
+      const result = await response.json();
+      setData(result.slip);
+      setLoading(false);
+    } catch (error) {
+      setError(error);
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -46,8 +39,8 @@ function App() {
   return (
     <>
       <div className="flex flex-col items-center justify-center bg-dark-blue font-manrope">
-        <div className="flex flex-col items-center justify-center mt-20">
-          <div className="relative flex flex-col items-center justify-center space-y-8 static-size text-center bg-dark-grayish-blue rounded-lg m-20">
+        <div className="flex flex-col items-center justify-center mt-10">
+          <div className="relative flex flex-col items-center justify-center space-y-4 static-size text-center bg-dark-grayish-blue rounded-lg m-20">
             <h1 className="text-neon-green pt-10 pb-4">ADVICE #{data.id}</h1>
             <div className="flex flex-col items-center justify-center">
               <pre className="text-white text-xl font-manrope advice-text">
