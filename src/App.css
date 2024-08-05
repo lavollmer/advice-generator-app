@@ -25,8 +25,19 @@ html, body, #root {
   text-overflow: ellipsis;
   white-space: wrap;
   max-width: 100%;
+  font-size: 18px;
 }
 
 .neon-button:hover {
   box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+@media (min-width: 1024px) {
+  .advice-text {
+    height: 28px;
+  }
+}
+
+.letter-spaced {
+  letter-spacing: 0.3em; 
 }
