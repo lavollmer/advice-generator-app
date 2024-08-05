@@ -47,7 +47,7 @@ function App() {
     <>
       <div className="flex flex-col items-center justify-center bg-dark-blue font-manrope">
         <div className="flex flex-col items-center justify-center mt-20">
-          <div className="flex flex-col items-center justify-center space-y-8 static-size text-center bg-dark-grayish-blue rounded-lg m-20">
+          <div className="relative flex flex-col items-center justify-center space-y-8 static-size text-center bg-dark-grayish-blue rounded-lg m-20">
             <h1 className="text-neon-green pt-10 pb-4">ADVICE #{data.id}</h1>
             <div className="flex flex-col items-center justify-center">
               <pre className="text-white text-xl font-manrope advice-text">
@@ -57,9 +57,9 @@ function App() {
             <div>
               <img src={dividerMobile} alt="divider mobile" />
             </div>
-            <div className="absolute">
+            <div className="absolute bottom-[-20px]">
               <button
-                className="relative z-10 bg-neon-green p-3 rounded-full"
+                className="bg-neon-green p-3 rounded-full"
                 onClick={fetchAdvice}
               >
                 <img src={iconDice} alt="icon dice" />
