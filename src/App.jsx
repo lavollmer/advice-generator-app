@@ -50,7 +50,7 @@ function App() {
           <div className="flex flex-col items-center justify-center static-size text-center bg-dark-grayish-blue rounded-lg m-20">
             <h1 className="text-neon-green pt-10 pb-4">ADVICE #{data.id}</h1>
             <div className="flex flex-col items-center justify-center">
-              <pre className="text-white text-xl font-manrope">
+              <pre className="text-white text-xl font-manrope advice-text">
                 <h1>"{data.advice}"</h1>
               </pre>
             </div>
