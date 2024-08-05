@@ -41,12 +41,12 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center mt-20 justify-center bg-dark-blue h-full w-full">
-          <div className="bg-grayish-blue">
+      <div className="flex flex-col items-center justify-center bg-dark-blue font-manrope">
+        <div className="flex flex-col items-center mt-20 justify-center h-full w-full">
+          <div className="bg-dark-grayish-blue rounded-lg m-20">
             <h1 className="text-neon-green">Advice #</h1>
             <div className="flex flex-col items-center justify-center">
-              <pre className="text-neon-green">
+              <pre className="text-white font-manrope">
                 {JSON.stringify(data, null, 2)}
               </pre>
             </div>
