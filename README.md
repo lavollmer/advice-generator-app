@@ -58,9 +58,17 @@ Advice Generator API Data Object:
 
 ### My Process
 
-I began by setting up TailwindCSS, ReactJS, and my GitHub repository. Additionally, I configured the README template, added all design assets, integrated Google Fonts, and defined the color scheme. I ensured that all commits were successfully pushed to GitHub before beginning my project.
+I started by setting up TailwindCSS, ReactJS, and my GitHub repository. I also configured the README template, added all design assets, integrated Google Fonts, and defined the color scheme. Before beginning the project, I ensured that all commits were successfully pushed to GitHub.
 
-Next, I reviewed the design layout to determine which sections would be components. 
+Next, I reviewed the design layout to determine which sections would be components.
+
+I began by ensuring the background color covered the entire height and width of the screen. I used the `App.css` file to specify the `html`, `body`, and `root` elements with a class name to achieve full width and height. In the root element, I applied the class to meet these specifications with a full background color. Then, I worked on displaying the advice from the API generator. I extracted the advice property from the data object and displayed the advice text in the JSX. After displaying the advice, I noticed it would overflow and become difficult to read. I addressed this by adding a static size class in `App.css` to ensure the div always maintained a specific size. 
+
+Next, I implemented functionality to display a new piece of advice when the user clicked the dice button icon. I created a function to fetch the advice, called this function in the `useEffect`, and attached an `onClick` event to the button. I positioned the button at the bottom of the static-size box using the `absolute` class for the button container and updated flexbox properties. Finally, I added a hover effect to the button to create a neon green glow using the `box-shadow` property.
+
+With the foundation of the app completed, I focused on refining the details. I changed the website tab icon to a specified icon, updated the font to the requested Manrope font weight, and added letter spacing to the `h1` to space out the letters more.
+
+Afterwards, I reviewed all my code, added comments, and updated my README with my process.
 
 
 ### Built with
@@ -112,6 +120,6 @@ I will continue to learn more about TailwindCSS, ReactJS and streamline my proce
 
 ## Author
 
-- Website - [Laura V](www.lauradeveloper.com)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Laura V](https://lauradeveloper.com/)
+- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/lavollmer)
 - Github - [@lavollmer](https://github.com/lavollmer)
